@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Calculator</title>
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/jquery.formstyler.css" rel="stylesheet" />
+ <script src="js/jquery-3.1.1.min.js" defer></script>	
+</head>
+
+<body>
+
+
+
+<div class="wrapper">
+	<div class="container">
+		<div class="row">
+		<div class="col-lg-6 col-md-5">
+			<form id="myform">						
+				
+				<p>TV in room
+				<input type="checkbox" class="styler" id="tv"></p>
+				<p>Personal kitchen
+				<input type="checkbox" class="styler" id="kitchen"></p>
+				<p>Hot water
+				<input type="checkbox" class="styler" id="hotwater"></p>
+				<p>Water closet (personal)
+				<input type="checkbox" class="styler" id="toilet"></p>
+				<p>Number of people
+				<input type="number" class="styler" value="2" min="2" max="5" id="count"></p>
+				<p>Select month
+				<select id="month" class="styler">
+					<option value="1">May</option>
+					<option value="2">June</option>
+					<option value="3">July</option>
+					<option value="4">August</option>
+					<option value="5">September</option>
+				</select>
+				</p>
+			</form>
+			</div>
+			<div class="col-lg-6 col-md-5">
+			<div class="variant">
+				<div class="info">
+					<p>You have searched room for <span id="num"></span> peoples in <span id="mnth"></span></p>
+				</div>
+				<div class="eco">
+					<span class="label label-danger">Under your requirements fit class room - eco.</span> The cost for the chosen month is:  <span class="label label-info" id="resEco"> </span>
+				</div>
+				<div class="std">
+					<span class="label label-warning">Under your requirements fit class room - standert .</span> The cost for the chosen month is:   <span class="label label-info" id="resStd"> </span>
+				</div>
+				<div class="lux">
+					<span class="label label-primary">Under your requirements fit class room - Lux. </span>The cost for the chosen month is:   <span class="label label-info" id="resLux"> </span>
+				</div>
+				<div class="house">
+					<span class="label label-success">Under your requirements fit class room - luxury. </span>The cost for the chosen month is:   <span class="label label-info" id="resHouse"> </span>
+				</div>			
+			</div>
+			</div>
+			
+		</div> <!-- .row -->
+	</div><!-- .content -->
+</div><!-- .wrapper -->
+
+	
+	<script src="js/jquery.formstyler.min.js" defer></script>
+	<script src="js/main.js" defer></script>
+</body>
+</html>

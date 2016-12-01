@@ -1,0 +1,11 @@
+#myform {
+  border: 1px solid grey;
+  position: relative;
+  width: 80%
+}
+
+.variant {
+  border: 1px solid grey;
+  position: relative;
+  display: none;
+}
